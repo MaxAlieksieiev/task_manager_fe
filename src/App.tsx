@@ -1,3 +1,5 @@
+import { RoutesComponent } from "./routes";
+import { ThemeContenxtProvider } from "./theme";
 
 /**
  * Main function component
@@ -6,9 +8,9 @@
  */
 function App() {
   return (
-    <div className="App">
-      Test
-    </div>
+    <ThemeContenxtProvider>
+      <RoutesComponent />
+    </ThemeContenxtProvider>
   );
 }
 
