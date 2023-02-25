@@ -4,6 +4,6 @@ export const ROUTES = {
     main: 'auth',
     login: 'login',
     register: 'register',
-    forgotPassword: 'forgot-password'
-  }
-}
+    forgotPassword: 'forgot-password',
+  },
+};

@@ -1,4 +1,4 @@
-import { DefaultTheme } from 'styled-components';
+import {DefaultTheme} from 'styled-components';
 
 export const theme: DefaultTheme = {
   light: {
@@ -6,7 +6,7 @@ export const theme: DefaultTheme = {
     backgrounds: {
       blue: '#91BDEC',
       pink: '#EDC1D3',
-    }
+    },
   },
   dark: {
     colors: {},
