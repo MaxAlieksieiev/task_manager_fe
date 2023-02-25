@@ -1,11 +1,11 @@
 import {
   Routes,
   Route,
-  BrowserRouter
-} from "react-router-dom";
-import { AuthLayout } from "../layouts/authLayout";
-import { Login } from "../pages/auths/login";
-import { ROUTES } from "./routes";
+  BrowserRouter,
+} from 'react-router-dom';
+import {AuthLayout} from '../layouts/authLayout';
+import {Login} from '../pages/auths/login';
+import {ROUTES} from './routes';
 
 export const RoutesComponent = () => {
   return (
@@ -18,5 +18,5 @@ export const RoutesComponent = () => {
         </Route>
     </Routes>
     </BrowserRouter>
-  )
-}
+  );
+};

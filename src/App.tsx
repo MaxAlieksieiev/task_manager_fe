@@ -1,5 +1,5 @@
-import { RoutesComponent } from "./routes";
-import { ThemeContenxtProvider } from "./theme";
+import {RoutesComponent} from './routes';
+import {ThemeContenxtProvider} from './theme';
 
 /**
  * Main function component
