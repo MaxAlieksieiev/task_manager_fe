@@ -21,7 +21,7 @@ type ButtonProps = {
   isDisabled?:boolean;
   type: ButtonTypeByLib;
   typeBy: ButtonType;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 export const Button: FC<ButtonProps> =

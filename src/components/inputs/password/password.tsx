@@ -4,7 +4,7 @@ import * as Styled from './styled';
 type InputPasswordProps = {
   isBordered: boolean;
   label?: string;
-  value: string;
+  value?: string;
 }
 
 export const InputPassword: FC<InputPasswordProps> = ({

@@ -4,11 +4,12 @@ import * as Styled from './styled';
 type InputTextProps = {
   isBordered: boolean;
   label?: string;
-  value: string;
+  value?: string;
+  field?: any;
 }
 
 export const InputText: FC<InputTextProps> = ({
-    isBordered, label, value,
+    isBordered, label, value, field,
   }) => {
     const [state, setState] = useState<string>(value || '');
 
@@ -21,8 +22,8 @@ export const InputText: FC<InputTextProps> = ({
         {label && <Styled.Label>{label}</Styled.Label>}
         <Styled.Input
           bordered={isBordered}
-          value={state}
-          onChange={handleInput}
+          value={field ? field.value : state}
+          onChange={field ? field.onChange : handleInput}
         />
       </Styled.Wrapper>
     );
