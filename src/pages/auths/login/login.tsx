@@ -1,10 +1,12 @@
 import * as Styled from './styles';
 import {Form} from './form';
+import {instance as axios} from '../../../api/instance';
 
 
 export const Login = () => {
   const handleSubmit = (data: any) => {
-    console.log('data', data);
+    // TODO test request
+    axios.post('/');
   };
 
   return (
