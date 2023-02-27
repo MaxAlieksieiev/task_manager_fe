@@ -3,8 +3,8 @@ import {
   Route,
   BrowserRouter,
 } from 'react-router-dom';
-import {AuthLayout} from '../layouts/authLayout';
-import {Login, Registration, ForgotPassword} from '../pages/auths';
+import {AuthLayout} from '~/layouts/authLayout';
+import {Login, Registration, ForgotPassword} from '~/pages/auths';
 import {ROUTES} from './routes';
 
 export const RoutesComponent = () => {
