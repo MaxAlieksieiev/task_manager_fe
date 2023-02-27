@@ -10,17 +10,17 @@ export const instance = axios.create({
   },
 });
 
-instance.interceptors.request.use(function(config) {
+instance.interceptors.request.use(function(config: any) {
   // TODO
   return config;
-}, function(error) {
+}, function(error: any) {
   return Promise.reject(error);
 });
 
 // Добавляем перехват ответов
-instance.interceptors.response.use(function(response) {
+instance.interceptors.response.use(function(response: any) {
   return response;
-}, function(error) {
+}, function(error: any) {
   if (error?.response?.status === 401) {
     // TODO
   }

@@ -2,9 +2,9 @@ import * as Styled from './styles';
 import {useForm} from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';
 import {initialData, LoginFormT, schema} from './data';
-import {Button, FormTextInput} from '../../../components';
+import {Button, FormTextInput} from '~/components';
 import {FC} from 'react';
-import {TypeOfInput} from '../../../core';
+import {TypeOfInput} from '~/core';
 
 type FormProps = {
   handleSubmitForm: (data: LoginFormT) => void;
