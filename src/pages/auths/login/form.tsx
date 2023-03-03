@@ -3,6 +3,9 @@ import {useForm} from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';
 import {initialData, LoginFormT, schema} from './data';
 import {Button, FormTextInput} from '~/components';
+import {ReactComponent as Google} from '~/assets/icons/Google.svg';
+import {ReactComponent as LinkedIn} from '~/assets/icons/Linkedin.svg';
+import {ReactComponent as Facebook} from '~/assets/icons/Facebook.svg';
 import {FC} from 'react';
 import {TypeOfInput} from '~/core';
 
@@ -25,7 +28,6 @@ export const Form: FC<FormProps> = ({handleSubmitForm}) => {
             name="email"
             control={control}
             isBordered
-            label="Email"
             error={errors['email']?.message}
             type={TypeOfInput.Text}
           />
@@ -35,27 +37,34 @@ export const Form: FC<FormProps> = ({handleSubmitForm}) => {
             name="password"
             control={control}
             isBordered
-            label="Password"
             error={errors['password']?.message}
             type={TypeOfInput.Password}
           />
         </Styled.Row>
         <Styled.Links>
-          <Styled.Link to="/auth/register">
-            If you don't have accout
-          </Styled.Link>
           <Styled.Link to="/auth/forgot-password">
             Forgot password?
+          </Styled.Link>
+          <Styled.Link to="/auth/register">
+            Sign up for an account
           </Styled.Link>
         </Styled.Links>
         <Styled.Button>
           <Button
-            title="Login"
+            title="Log in"
             size="large"
             typeBy="submit"
             type="primary"
           />
         </Styled.Button>
+        <Styled.MiniRow>
+          or
+        </Styled.MiniRow>
+        <Styled.SocialLinks>
+          <Google />
+          <Facebook />
+          <LinkedIn />
+        </Styled.SocialLinks>
       </Styled.Form>
     </form>
   );

@@ -11,7 +11,7 @@ export const Login = () => {
 
   return (
     <Styled.Wrapper>
-      <Styled.Title>Login</Styled.Title>
+      <Styled.Title>Welcome to Tropic</Styled.Title>
       <Form handleSubmitForm={handleSubmit}/>
     </Styled.Wrapper>
   );

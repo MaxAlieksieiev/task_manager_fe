@@ -5,15 +5,15 @@ import * as Styled from './styled';
 
 type FormTextInputProps = {
   name: string;
-  label: string;
   error?: string;
   control: Control<any, any>;
   isBordered?: boolean;
   type: TypeOfInput;
+
 }
 
 export const FormTextInput: FC<FormTextInputProps> = ({
-    name, label, error, control, isBordered, type,
+    name, error, control, isBordered, type,
   }) => {
     // TODO create one component
     // const InputComponent = useMemo<ReactElement>(() =>{
@@ -28,18 +28,19 @@ export const FormTextInput: FC<FormTextInputProps> = ({
         render={
           ({field}) => (
             <Styled.Wrapper>
-            {label && <Styled.Label>{label}</Styled.Label>}
             {type === TypeOfInput.Text && <Styled.FormInput
               bordered={isBordered}
               value={field.value}
               onChange={field.onChange}
               status={error && 'error'}
+              placeholder="Email"
             />}
             {type === TypeOfInput.Password && <Styled.FormPassword
               bordered={isBordered}
               value={field.value}
               onChange={field.onChange}
               status={error && 'error'}
+              placeholder="Password"
             />}
             {error && <Styled.Error>{error}</Styled.Error>}
             </Styled.Wrapper>

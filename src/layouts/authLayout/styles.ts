@@ -3,13 +3,33 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(115.67deg,
-    ${(props) => props.theme.light.backgrounds.blue}
-    7.14%,
-    ${(props) => props.theme.light.backgrounds.pink}
-    99.42%
-  );
+  background-color: ${(props) => props.theme.light.backgrounds.white};
+  display: flex;
+`;
+
+export const LeftSide = styled.div`
+  background: url('/images/Group.png') no-repeat 0 0;
+  width: 100%;
+  max-width: 688px;
+  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+`;
+
+export const RightSide = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const Logo = styled.div`
+  margin-left: 169px;
+`;
+
+export const Form = styled.div`
+  width: 500px;
+  padding: 40px;
+  margin-left: 164px;
+  border-radius: 10px;
+  border: 1px solid rgba(136, 76, 178, 0.42);
+  box-sizing: border-box;
 `;
