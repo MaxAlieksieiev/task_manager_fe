@@ -2,40 +2,49 @@ import styled from 'styled-components';
 import {Link as RouterLink} from 'react-router-dom';
 
 export const Wrapper = styled.div`
-  width: 400px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 40px #8CA4D8;
-  border-radius: 30px;
-  padding: 20px 0;
+  z-index:2;
 `;
 
 export const Title = styled.div`
+  font-weight: 500;
+  font-size: 32px;
   text-align: center;
-  padding: 5px;
-  font-weight: bold;
+  margin-bottom: 32px;
 `;
 
 export const Form = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 0 20px;
-  margin-top: 20px;
+
 `;
 
 export const Row = styled.div`
-  margin: 10px 0;
+  margin-bottom: 24px;
 `;
 
 export const Button = styled.div`
-  margin-top: 20px;
-  text-align: center;
+
 `;
 
 export const Link = styled(RouterLink)`
+  font-weight: 400;
   font-size: 14px;
+  color: ${(props) => props.theme.light.colors.mainText};
 `;
 
 export const Links = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+`;
+
+export const MiniRow = styled.div`
+  margin: 16px 0;
+  text-align: center;
+`;
+
+export const SocialLinks = styled.div`
+  width: 128px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 `;
