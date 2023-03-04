@@ -2,12 +2,10 @@ import * as Styled from './styles';
 import {useForm} from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';
 import {initialData, LoginFormT, schema} from './data';
-import {Button, FormTextInput} from '~/components';
-import {ReactComponent as Google} from '~/assets/icons/Google.svg';
-import {ReactComponent as LinkedIn} from '~/assets/icons/Linkedin.svg';
-import {ReactComponent as Facebook} from '~/assets/icons/Facebook.svg';
+import {Button, FormTextInput} from '@components/index';
+import {Google, LinkedIn, Facebook} from '@assets/index';
 import {FC} from 'react';
-import {TypeOfInput} from '~/core';
+import {TypeOfInput} from '@core/index';
 
 type FormProps = {
   handleSubmitForm: (data: LoginFormT) => void;
@@ -61,9 +59,9 @@ export const Form: FC<FormProps> = ({handleSubmitForm}) => {
           or
         </Styled.MiniRow>
         <Styled.SocialLinks>
-          <Google />
-          <Facebook />
-          <LinkedIn />
+          <img src={Google} />
+          <img src={Facebook} />
+          <img src={LinkedIn} />
         </Styled.SocialLinks>
       </Styled.Form>
     </form>

@@ -1,4 +1,5 @@
 {
+  "extends": "./tsconfig.paths.json",
   "compilerOptions": {
     "target": "es5",
     "lib": [
@@ -19,12 +20,6 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": "./src",
-    "paths": {
-      "~/*": ["*"],
-    }
   },
-  "include": [
-    "src"
-, "craco.config.ts"  ]
+  "include": ["src/assets/icons/images.d.ts", "src"]
 }

@@ -1,5 +1,5 @@
 import {FC} from 'react';
-import {ReactComponent as Logo} from '~/assets/icons/Logo.svg';
+import {Logo} from '@assets/index';
 import {Outlet} from 'react-router-dom';
 
 import * as Styled from './styles';
@@ -9,7 +9,7 @@ export const AuthLayout: FC = () => {
     <Styled.Wrapper>
       <Styled.LeftSide>
         <Styled.Logo>
-          <Logo/>
+          <img src={Logo}/>
         </Styled.Logo>
       </Styled.LeftSide>
       <Styled.RightSide>
