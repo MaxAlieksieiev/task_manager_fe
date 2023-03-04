@@ -1,6 +1,6 @@
 import * as Styled from './styles';
 import {Form} from './form';
-import {instance as axios} from '~/api';
+import {instance as axios} from '@api/index';
 
 
 export const Login = () => {
